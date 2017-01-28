@@ -1,3 +1,9 @@
+<?php
+    //retriving required files
+    require("./assets/phpFiles/variables.php");
+    require($__functionsPath);
+    require($__formValidation);
+?>
 <!DOCTYPE html>
 <!--[if IE 8 ]><html lang="en" class="ie8"><![endif]-->
 <!--[if IE 9 ]><html lang="en" class="ie9"><![endif]-->

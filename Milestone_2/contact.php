@@ -1,12 +1,6 @@
 <?php
-    //coaching
-    $processPhp = "./assets/phpFiles/process.php";
-    $documentHeader = "./assets/phpFiles/pageHeader.php";
-    $documentFooter = "./assets/phpFiles/pageFooter.php";
-    
     //including page header and processing file
-    include($processPhp);
-    include($documentHeader);
+    require("./assets/phpFiles/pageHeader.php");
 ?>
 
 <main class="content-wrapper">
@@ -16,11 +10,11 @@
     </div><br />
     <div class="contentAreaMain mCustomScrollbar" data-mcs-theme="insetdark-3">
         <fieldset id="required">
-            <form method="POST" action="./assets/phpFiles/process.php" name="contactForm" id="contactFormLayout" onsubmit="return validate()">
+            <form method="POST" action="./process.php" name="contactForm" id="contactFormLayout" onsubmit="validate()">
                 <i id="msg2">All fields are required <i style="color:red;">*</i></i><br /><br />
                 <input type="text" id="email" name="email" placeholder="Email address:" required><br /><br />
-                <input type="text" id="firstName" name="firstName" placeholder="Firstname:" required><br /><br />
-                <input type="text" id="lastName" name="lastName" placeholder="Lastname:" required><br /><br />
+                <input type="text" id="firstName" name="firstName" placeholder="First name:" required><br /><br />
+                <input type="text" id="lastName" name="lastName" placeholder="Last name:" required><br /><br />
                 <input type="text" id="subject" name="subject" placeholder="Subject:" required><br />
                 <br /><br />
                 
@@ -69,7 +63,7 @@
                 
 <?php 
     //including document footer
-    include($documentFooter);
+    require($documentFooter);
 ?>
 <script src="./assets/script/validation.js"></script>
 <script src="./assets/script/maps.js"></script>

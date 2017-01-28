@@ -1,12 +1,7 @@
 <?php
-    //coaching
-    $processPhp = "./assets/phpFiles/process.php";
-    $documentHeader = "./assets/phpFiles/pageHeader.php";
-    $documentFooter = "./assets/phpFiles/pageFooter.php";
-    
     //including page header and processing file
-    include($processPhp);
-    include($documentHeader);
+    require("./assets/phpFiles/pageHeader.php");
+    
 ?>
         <!-- Start WOWSlider.com HEAD section -->
         <script type="text/javascript" src="./assets/engine1/jquery.js"></script>
@@ -97,5 +92,5 @@
 
 <?php 
     //including document footer
-    include($documentFooter);
+    require($documentFooter);
 ?>
